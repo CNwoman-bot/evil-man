@@ -10,10 +10,10 @@ Content-Type: application/json
 ## add data
 POST :main/add
 Content-Type: application/json
-{"title": "test2",
- "timestamp": "test",
- "url": "test",
- "tags": ["偷拍","性骚扰"]}
+{"title": "温州永嘉县警方抓获一名男子在网上大量贩卖摄像头，许多哺乳母亲丝毫不知被偷窥",
+ "timestamp": "20191226",
+ "url": "https://zx.sina.cn/2019-12-26/zx-iihnzhfz8377472.d.html?wm=3049_0015",
+ "tags": ["偷拍"]}
 
 ## get tags
 GET :main/tags
@@ -26,4 +26,4 @@ Content-Type: application/json
 ## query specific data
 POST :main/query
 Content-Type: application/json
-{"title": "test2"}
+{"title": "陕西男子商场偷拍罚款 500"}
