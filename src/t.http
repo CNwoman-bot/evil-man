@@ -1,0 +1,29 @@
+# -*- restclient -*-
+
+## parameters
+:main = http://127.0.0.1:9000
+
+## save data
+GET :main/save
+Content-Type: application/json
+
+## add data
+POST :main/add
+Content-Type: application/json
+{"title": "test2",
+ "timestamp": "test",
+ "url": "test",
+ "tags": ["偷拍","性骚扰"]}
+
+## get tags
+GET :main/tags
+Content-Type: application/json
+
+## query all data
+POST :main/query
+Content-Type: application/json
+
+## query specific data
+POST :main/query
+Content-Type: application/json
+{"title": "test2"}
