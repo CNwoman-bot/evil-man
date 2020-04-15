@@ -1,0 +1,84 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros dynamic-space-size=4096 -Q -- $0 "$@"
+|#
+
+(in-package #:cl-user)
+
+;;; COMPILE FLAGS
+(declaim (sb-ext:muffle-conditions cl:style-warning))
+(declaim (optimize (speed 3) (space 0) (debug 0) (safety 0) (compilation-speed 0)))
+(declaim (sb-ext:muffle-conditions sb-ext:compiler-note))
+
+;;; LOAD FLAGS
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (setf sb-impl::*default-external-format* :utf-8)
+  (setf sb-alien::*default-c-string-external-format* :utf-8) 
+  (setf *read-default-float-format* 'double-float))
+
+
+;;; QUICKLOAD
+(ql:quickload :cl-json :silent t)
+(ql:quickload :cl-redis :silent t)
+(ql:quickload :woo :silent t)
+(ql:quickload :ningle :silent t)
+(ql:quickload :clack :silent t)
+(ql:quickload :log4cl :silent t)
+(ql:quickload :jack-tools :silent t)
+
+;;; PACKAGE DECLARATION
+(defpackage #:gatekeeper
+  (:use #:cl
+	#:jack.tools.lists
+	#:jack.tools.keys
+        #:jack.tools.misc
+        #:jack.tools.withs
+        #:jack.tools.objects
+	#:jack.tools.maths
+	#:jack.tools.threads
+	#:jack.tools.https
+	#:jack.tools.filesystems))
+(in-package #:gatekeeper)
+(log:config :pattern "%&%<%I%;<;;>;-5p [%D{%H:%M:%S}] - %m%>%n")
+
+;;; DEFS
+(defvar *app* (make-instance 'ningle:app))
+
+(defun start-service (app dir)
+  (defhandler (app "/save" :method :get)
+    (dump dir))
+
+  (defhandler (app "/add" :method :post)
+    (let* (()))))
+
+(defun dump (dir)
+  (dolist (key (red:keys "*"))
+    (jack.tools.filesystems:write-file
+     (red:dump key)
+     (format nil "~d/~d" dir key))))
+
+(defun restore (dir)
+  (dolist (file (directory (pathname dir)))
+    (let ((dump (cl-json:decode-json-from-source file)))
+      (red:restore
+       (cl:file-namestring file) 0
+       (make-array (length dump)
+		   :initial-contents dump
+		   :element-type '(unsigned-byte 8))))))
+
+;;; ENTRYPOINT
+(defun main (&rest argv)
+  (let* ((split (split-list argv))
+	 (port (if-exist-return (read-flag "-p" split) 9000))
+	 (redis-host (if-exist-return (read-flag "-rh" split) "127.0.0.1"))
+	 (redis-port (if-exist-return (read-flag "-rp" split) 6379))
+	 (dir (if-exist-return (read-flag "-dir" split) "~/.roswell/local-projects/evil-man/data")))
+    (redis:connect :host redis-host :port redis-port)
+    (restore dir)
+    (stop-port port)
+    (start-service *app*)
+    (multiple-value-bind (handler acceptor-name)
+	(clackup *app* :server :woo :address "0.0.0.0" :port port :worker-num 4)
+      (format *standard-output* "started server.~%")
+      (connect-client acceptor-name))))
