@@ -17,7 +17,6 @@ exec ros dynamic-space-size=4096 -Q -- $0 "$@"
   (setf sb-alien::*default-c-string-external-format* :utf-8) 
   (setf *read-default-float-format* 'double-float))
 
-
 ;;; QUICKLOAD
 (ql:quickload :cl-json :silent t)
 (ql:quickload :cl-redis :silent t)
@@ -26,6 +25,7 @@ exec ros dynamic-space-size=4096 -Q -- $0 "$@"
 (ql:quickload :clack :silent t)
 (ql:quickload :log4cl :silent t)
 (ql:quickload :jack-tools :silent t)
+(ql:quickload :inferior-shell :silent t)
 
 ;;; PACKAGE DECLARATION
 (defpackage #:gatekeeper
@@ -45,13 +45,6 @@ exec ros dynamic-space-size=4096 -Q -- $0 "$@"
 ;;; DEFS
 (defvar *app* (make-instance 'ningle:app))
 
-(defun start-service (app dir)
-  (defhandler (app "/save" :method :get)
-    (dump dir))
-
-  (defhandler (app "/add" :method :post)
-    (let* (()))))
-
 (defun dump (dir)
   (dolist (key (red:keys "*"))
     (jack.tools.filesystems:write-file
@@ -59,13 +52,38 @@ exec ros dynamic-space-size=4096 -Q -- $0 "$@"
      (format nil "~d/~d" dir key))))
 
 (defun restore (dir)
-  (dolist (file (directory (pathname dir)))
+  (dolist (file (directory (format nil "~d/*" dir)))
     (let ((dump (cl-json:decode-json-from-source file)))
       (red:restore
        (cl:file-namestring file) 0
        (make-array (length dump)
 		   :initial-contents dump
 		   :element-type '(unsigned-byte 8))))))
+
+(defun get-tags (lst)
+  (map-reduce #'read-from-string
+	      #'*
+	      (eval `(red:hmget "modulus" ,@lst))))
+
+(defun start-service (app dir)
+  (defhandler (app "/save" :method :get)
+    (dump dir))
+
+  (defhandler (app "/add" :method :post)
+    (let* ((title (agethash :title http-content*))
+	   (url (agethash :url http-content*))
+	   (timestamp (agethash :timestamp http-content*))
+	   (tagcode (get-tags (agethash :tags http-content*)))
+	   (id (- (red:dbsize) 1)))
+      (red:hmset id "title" title
+		 "url" url
+		 "timestamp" timestamp
+		 "tagcode" tagcode))))
+
+(defun stop-port (port)
+  (inferior-shell:run/nil
+   `(pipe (lsof -ti ,(format nil ":~d" port)) (xargs kill -9))
+   :on-error nil))
 
 ;;; ENTRYPOINT
 (defun main (&rest argv)
@@ -75,10 +93,12 @@ exec ros dynamic-space-size=4096 -Q -- $0 "$@"
 	 (redis-port (if-exist-return (read-flag "-rp" split) 6379))
 	 (dir (if-exist-return (read-flag "-dir" split) "~/.roswell/local-projects/evil-man/data")))
     (redis:connect :host redis-host :port redis-port)
+    (red:flushall)
     (restore dir)
     (stop-port port)
-    (start-service *app*)
+    (start-service *app* dir)
     (multiple-value-bind (handler acceptor-name)
-	(clackup *app* :server :woo :address "0.0.0.0" :port port :worker-num 4)
+	(clack:clackup *app* :server :woo :address "0.0.0.0" :port port :worker-num 4)
+      (declare (ignorable handler))
       (format *standard-output* "started server.~%")
       (connect-client acceptor-name))))
