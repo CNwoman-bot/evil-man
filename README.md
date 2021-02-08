@@ -44,7 +44,7 @@
 ## 最近修改
 
 ### v1.2.18 (2021/02/08 21:00)
-更新姗姗来迟，近期收到了各种形式的辱骂，我寻思杀人放火的也不是我呀，难道是你？  共计：1874 <br>
+更新姗姗来迟，近期收到了各种形式的辱骂，我寻思杀人放火的不是我呀，你如此生气难不成是你？  共计：1876 <br>
 
 ### v1.2.17 (2021/01/05 14:00)
 2021年第一更，新增泼硫酸及泼墨案件 共计：1845 <br>
@@ -55,7 +55,7 @@
 ```
 我又没打别人 我打的是我老婆 
 持结婚证杀她又不一定死刑
-本小节合计：298条
+本小节合计：299条
 ```
 [江苏扬州男子因妻子劝他不要酒驾，摔碎妻子手机，其妻监控盲区落水死因不明](https://www.thepaper.cn/newsDetail_forward_4441850)<br>
 [江苏扬州仪征男子曹某用厨刀划割妻子脖颈致死](https://baijiahao.baidu.com/s?id=1634339251276127892&wfr=spider&for=pc)<br>
@@ -336,6 +336,7 @@
 [贵州黔东南榕江县男子罗某多次要求公安机关查找其前妻去向和电话号码，对民警多次辱骂和威胁](https://dy.163.com/article/FNE3GQL80524JIP1.html)<br>
 [新疆乌鲁木齐市男子高某连砍妻子十几刀致其死亡](http://news.cntv.cn/20110919/113272.shtml)<br>
 [新疆乌鲁木齐市米东区男子马某持健身拉力器殴打妻子头部、胸部，使其变为植物人，判处有期徒刑十年](https://www.sohu.com/a/449230365_260616)<br>
+[青海玉树曲麻莱县男子谢德成(扎西)家暴](https://new.qq.com/rain/a/20210207A083RA00)<br>
 [海南海口美兰区岭下村廉租房一澄迈县金江镇籍男子许某某持刀杀妻](https://3g.163.com/news/article/FIC7NQ6D00019K82.html?clickfrom=baidu_adapt)<br>
 [内蒙古鄂尔多斯伊金霍洛旗一男子那某某家暴妻子并持刀捅刺数刀致死]( http://www.quwenqushi.com/news/21880.html)<br>
 [内蒙古鄂尔多斯市杭锦旗女记者遭丈夫金柱家暴惨死,丈夫被判死缓](http://www.sohu.com/a/129476305_531704)<br>
@@ -867,7 +868,7 @@
 
 ### 无辜路人
 ```
-本小节合计：319条
+本小节合计：321条
 ```
 [广东梅州少女遭老汉当街猥亵路人拍照无人救](http://www.sohu.com/a/221213486_115376)<br>
 [广东梅州一中学内20岁男子捅死18岁女生](https://baijiahao.baidu.com/s?id=1622425316899387037&wfr=spider&for=pc)<br>
@@ -875,6 +876,7 @@
 [广东东莞理工大学大四学生敖某于女厕性侵大二女生并杀害](https://news.qq.com/a/20120613/000055.htm)<br>
 [广东东莞女子路边打电话,赤膊长发男路过突然挥拳 一拳将其打进屋内](http://n.miaopai.com/media/9eEFglnz8QJG-G9Hj1gyuOtuKVW0rHjC)<br>
 [广东东莞长安镇一男子何某借租房看房杀害女房东](https://3g.china.com/act/news/10000169/20200727/38558870.html)<br>
+[广东东莞男子刘某峰刀捅女子30多刀致死](https://xw.qq.com/amphtml/20210202A0DE1100/20210202A0DE1100)<br>
 [广东佛山市南海区男子赵某杀害一青年女性](https://new.qq.com/omn/20200516/20200516A0F9CG00.html?pc)<br>
 [广东佛山男子将陌生女孩从商场3楼扔下 被刑拘](https://ishare.ifeng.com/c/s/7jmn1d9WZfM)<br>
 [广东佛山顺德杏坛镇右滩村男子蔡某杀害邻居女子并抛尸](http://www.sohu.com/a/323583740_664080)<br>
@@ -948,6 +950,7 @@
 [一男子在首都机场骚扰欧阳娜娜](http://news.hexun.com/2021-02-01/202947203.html)<br>
 [天津和平区营口道与贵州路交口一男子刘某某持刀致陌生女子一死一伤](https://k.sina.com.cn/article_1652484947_m627eeb53033010ejp.html?cre=tianyi&mod=pcpager_tech&loc=11&r=9&rfunc=100&tj=none&tr=9&from=news&subch=onews)<br>
 [河北唐山滦南县一男子古某串门猥亵女主人 企图强奸遭反抗被挠伤后逃离](http://3g.365jia.cn/news/2017-02-18/36EEADD33E35C3FB.html)<br>
+[河北沙河馨之家宾馆男工作人员性侵隔离女性未遂](https://new.qq.com/rain/a/20210202A0CTWL00)<br>
 [云南巍山县大仓镇男子段金泉杀害6名年轻女性](http://news.eastday.com/s/20081204/u1a4024141.html)<br>
 [云南昆明理工大学大二学生李心草被一男子打耳光，被发现时已溺亡](https://new.qq.com/omn/20191013/20191013A0K26Y00.html)<br>
 [湖南长沙中南大学南校升华公寓16栋下一男子王某割喉女子致死](http://news.cntv.cn/20110510/110389.shtml)<br>
@@ -996,6 +999,7 @@
 [安徽芜湖鸠江区二坝镇男子李某专抢单身女并猥亵](http://www.ahwang.cn/content/2014-05/07/content_1366677.html)<br>
 [安徽六安一露阴癖男子骚扰女性 五分钟后被警察抓捕](http://3g.365jia.cn/news/2017-03-16/1E562D9D40C94B8C.html)<br>
 [安徽六安梅山南路某写字楼内一男网红徐某偷窥女厕所被拘](http://3g.365jia.cn/news/2017-05-15/B007F6B170B72FB3.html)<br>
+[安徽六安舒城县街头一男子陶某狂捅女子30刀致死](https://3g.china.com/act/news/11142797/20160614/22863204.html)<br>
 [安徽无为二中门口一男子劫持猥亵高中女生](http://3g.365jia.cn/news/2017-05-27/2F1A572010C82AC5.html)<br>
 [安徽巢湖庐江县汤池镇某饭店一男子薛某猥亵多名女子](http://www.chaohu365.cn/4g.php?cid=2&id=5812&m=show)<br>
 [安徽巢湖男子黄某在景区强奸女性](http://3g.365jia.cn/news/2016-12-04/209CAAC8F9F1C493.html)<br>
@@ -1389,6 +1393,7 @@
 [四川63岁男子强奸14岁残疾少女](https://www.guancha.cn/politics/2019_10_28_523008.shtml)<br>
 [四川成都市新都区13岁女孩遭多次性侵](https://edu.qq.com/a/20160920/009380.htm?pgv_ref=aio2015&ptlang=2052)<br>
 [四川巴中平川县兰草镇木阁村男子袁某捅死同班女生](http://www.mnw.cn/edu/news/2089766-3.html)<br>
+[四川巴中男子李某沉迷赌博杀害11岁女孩](https://www.sohu.com/a/448067411_120954952)<br>
 [四川德阳广汉市区银座一家奶茶店一男子打陌生14岁女孩](https://m.sohu.com/a/414879475_260616?scm=1002.b000b.fa0137.ARTICLE_REC)<br>
 [四川南充营山县合兴乡男子魏某以1.5元为诱饵 猥亵未满7岁幼女](http://scnews.newssc.org/system/20140729/000469266.html)<br>
 [四川南充嘉陵区一男子网吧抚摸亲吻陌生女孩 涉嫌猥亵](http://scnews.newssc.org/system/20140717/000464065.html)<br>
@@ -1907,7 +1912,7 @@
 
 ### 性骚扰
 ```
-本小节合计：50条
+本小节合计：51条
 ```
 [广西男子公交性骚扰被发现，掏刀恐吓被行拘15日](http://n.miaopai.com/media/LxKJlAiiw6k19G7RwVsuOiTnJ~XVCT-f)<br>
 [广西南宁一男子在餐厅两次袭胸陌生女子，罚款500](https://weibo.com/tv/v/In30FzQWb?fid=1034:4454920485535761)<br>
@@ -1956,6 +1961,7 @@
 [江苏南京工业大学浦江学院学生遭校医性骚扰，当事校医涉嫌猥亵已被拘留](http://www.sohu.com/a/270982371_610793)<br>
 [江苏南京地铁3号线某车厢内，男子邱某多次女性臀部，被拘留5天](https://baijiahao.baidu.com/s?id=1664490004832396078&wfr=spider&for=pc)<br>
 [江苏南京男子潘某地铁猥亵女子，警方给予潘某行拘7日处罚](http://k.sina.com.cn/article_1698823241_m6541fc4902000v6pd.html)<br>
+[江苏常州209路公交车一男子陈某某骚扰十二岁女孩](https://new.qq.com/omn/20210204/20210204A03VOC00.html)<br>
 [天津17岁少女打优步遭性骚扰 司机聊女生第一次](http://m.cnr.cn/news/20160706/t20160706_522598898.html)<br>
 [海南保亭嬉水节 数十名女性被扒衣袭胸性骚扰](http://hebei.sina.com.cn/news/shwx/2012-08-24/07535863.html?fr=zt&from=wap)<br>
 [日本东京街头一中国籍男子强摸女性被捕](https://k.sina.cn/article_6066193547_m16992c48b03300nkxq.html?from=news)<br>
