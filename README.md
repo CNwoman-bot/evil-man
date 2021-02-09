@@ -1,5 +1,5 @@
 # 支持中国女性维权，支持中国女性地位进一步提高
-![image]https://wx1.sinaimg.cn/large/006GCoOtly1gng8wbtf40j30wy0lf0wy.jpg
+![image](https://wx1.sinaimg.cn/large/006GCoOtly1gng8wbtf40j30wy0lf0wy.jpg)
 也太能编了吧。没一个是真的。就连视频的意图都没看懂。找语文老师补补课吧。视频的文案都发专栏了，这都看不懂？
 ## 简介
 ## 如果支持女权，完全没有问题。为什么非要写“中国男性之恶”呢？难道只有中国男性有犯罪的？还是只有中国人犯罪的？还是只有男性犯罪的？
