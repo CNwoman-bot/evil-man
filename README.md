@@ -514,7 +514,6 @@
 [云南昭通市大关县寿山镇中坪村一男子戴青文杀害岳父岳母](https://baijiahao.baidu.com/s?id=1670731841114466423&wfr=spider&for=pc)<br>
 [海南儋州男子陈某拿着把菜刀冲进丈母娘家,砍伤岳父母和9岁侄子](http://www.sohu.com/a/245522422_213922)<br>
 [海南男子曾令儒持刀杀害女友母亲和姐姐](http://www.hicourt.gov.cn/preview/article?articleId=03111754-9fab-4e43-aa91-4f0f0439c60a)<br>
-[河南商洛市一男子持刀捅向妻子家人致一死两伤](http://www.86zhaokao.cn/html/xinwenzaixian/2019/0110/35696.html)<br>
 [河南安阳内黄县高堤乡王俄村男子王某杀害妻子一家五口](http://www.sohu.com/a/338903258_797627)<br>
 [河南濮阳某小区，一男子因家庭纠纷，持刀劫持老婆岳父等8人](http://compaign.tudou.com/v/XNDUxNzA0NTkyOA==)<br>
 [河南三门峡一男子杀害妻子岳母等5人后坠亡](https://dy.163.com/article/FH17RR4S053781RI.html )<br>
@@ -565,6 +564,7 @@
 [陕西咸阳男子张进峰酒后砍杀妻子及其亲属致4死1伤](http://jiangsu.sina.com.cn/news/s/2019-12-04/detail-iihnzahi5137862.shtml?from=jiangsu_ydph)<br>
 [陕西榆林市靖边县周河镇东坪村男子高某不满孩子随妻姓持斧砍死岳父母](http://news.sohu.com/20101105/n277174673.shtml)<br>
 [陕西咸阳兴平市男子鲁牛娃杀害4名女性亲属藏尸家中，两人不满18岁](http://news.cntv.cn/society/20110401/106290.shtml)<br>
+[陕西商洛市一男子持刀捅向妻子家人致一死两伤](http://www.86zhaokao.cn/html/xinwenzaixian/2019/0110/35696.html)<br>
 [甘肃成县纸坊镇枣树村尧坪社男子李某屠杀妻子全家 手段残忍令人惊心](http://www.china.com.cn/chinese/law/710956.htm)<br>
 [甘肃青海大通县多林镇吴仕庄村男子蔡某与妻子不和，杀妻子全家后自杀](http://news.hsw.cn/system/2014/02/10/051855363_02.shtml)<br>
 [内蒙古克什克腾旗芝瑞镇兴华村男子高某杀害妻子和岳母](http://news.sina.com.cn/s/sd/2012-09-18/094625196870.shtml)<br>
